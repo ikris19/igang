@@ -1,0 +1,239 @@
+/* Reset default styles */
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background: #0f0163;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+/* Profile and section image styles */
+.profile-image, .section-image {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+
+
+/* Main heading styles */
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Navigation styles */
+nav {
+    background: linear-gradient(to bottom, #0f0163, #080022);
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Navigation link styles */
+nav a {
+    float: left;
+    display: block;
+    color: #F5EDED;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: background 0.3s, color 0.3s;
+    flex-grow: 1;
+}
+
+/* Navigation link hover styles */
+nav a:hover {
+    background: linear-gradient(to top, #0f0163, #080022);
+    color: #949494;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Main content section styles */
+section {
+    min-height: 100vh;
+    padding: 35px;
+    margin-top: 90px;
+    background: linear-gradient(to right, #09003f, #003a92, #09003f);
+    color: #ffffff;
+    background-image: url(images/Alien-Sky-Forest-Background-650x364.jpg);
+    background-repeat: no repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    border: 10px solid;
+}
+
+/*Section image styles*/
+width: 100 px;
+height: 100px;
+margin-top: 25px;
+background-color: #dddd;
+background-raduis: 50%;
+margin-right: 15px;
+float: left; 
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 768px) {
+    .section-image {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+/* Audio container styles */
+.audio-container {
+    margin-top: 20px;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 0;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+}
+
+/* Larger screens media query */
+@media (min-width: 768px) {
+    audio {
+        max-width: 800px;
+    }
+}
+
+.playlist {
+  list-style: none;
+  padding: 0;
+}
+
+/* Playlist item */
+.playlist-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Song title */
+.song-title {
+  font-weight: bold;
+}
+
+/* Artist name */
+.artist-name {
+  color: #666;
+}
+
+/* Highlight current song */
+.current-song {
+  background-color: #f0f0f0;
+}
+
+/* Video holder styles */
+.video-holder {
+    margin-top: 20px;
+}
+
+/* Responsive video styles */
+.video-holder video {
+    width: 100%;
+    height: auto;
+}
+
+/* Button container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+/* Button container styles */
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+/* Button styles */
+.button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Circular image holder styles */
+.picture-holder {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px; /* Adjust the size of the circular image */
+    height: 40px; /* Adjust the size of the circular image */
+    margin-right: 5px; /* Adjust the spacing between picture holder and content */
+}
+
+/* Button image styles */
+.button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Maximum width of content holder styles */
+.content-holder {
+    max-width: 200px; /* Adjust the maximum width of the content holder */
+}
+
+/* Footer styles */
+footer { 
+    background: linear-gradient(to right,#0f0163, #080022);
+    color: #8e0000; 
+    padding: 10px; /* Adjusted padding */ 
+    text-align: center; 
+    position: fixed; 
+    width: 100%; 
+    bottom: 0; 
+    z-index: 1000; 
+}
+
+/* Highlighted text styles */
+mark {
+    background-color: #AAA2B1;
+    color: linear-gradient(to right,  #0f0163, #080022);
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+    .video-holder video {
+        width: 100%;
+        height: auto;
+    }
+}

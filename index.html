@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me, Myself, and I</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+section {
+    min-height: 100vh;
+    margin-top: 90px;
+    background: linear-gradient(to right, #0f0163, #080022);
+    display: flex;
+}
+
+aside {
+    flex: 1;
+    
+    
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #4D6489;
+    width: 25%; /* Default width for aside */
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 3px;
+    background-color: #FFBA00;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+main {
+    flex: 2; /* Default width for main */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #0f0163, #080022);
+}
+
+figure {
+            text-align: right;
+            color: black;
+            background-color: #FFBA00;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        }
+
+@media (min-width: 768px) {
+    aside {
+        width: 20%; 
+    }
+
+    main {
+        flex: 3; 
+    }
+    .section-image {
+        width: 80%;
+        height: auto;
+        margin-left: 25px;
+    }
+}
+
+#slider-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 95%;
+    height: auto;
+    border: 1px solid #ddd;
+    align-items: center;
+}
+
+#dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: green;
+}
+
+#slider-container{
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#slider{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide{
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.slide img{
+    width: 95%;
+    height: auto;
+    border: 1px solid #ddd;
+    align-items: center;
+}
+
+#dots-container{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.dot{
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: green;
+}
+    </style>
+</head>
+<body>
+    <applet code="LoginForm.java "width="200" height="200"></applet>
+    <header>
+        <img src="images/logo.jpg" alt="Profile Image" class="profile-image">
+        <h1>Self Introduction</h1>
+       
+    </header>
+ 
+    <nav>
+
+        <a href="index.html">Home</a> 
+        <a href="personal info.html">Personal Information</a> 
+        <a href="personal data.html">Personal Data</a> 
+        <a href="interest.html">Interest</a> 
+        <a href="track.html">Track</a>
+        <a href="visual.html">Visual Diary</a>
+    </nav>
+
+    <section id="home">
+        <aside>
+             
+            <img src="images/kitten.jpg" alt="Profile Image" class="section-image" class="center-image">
+            
+            <h2>Kristine Joy B. Igang</h2>
+            
+            <hr></hr>
+        
+            <p style="text-align: justify; text-indent: 20px;">Thank you for visiting my website, Hope you'll have a good time knowing me.</p>
+            <hr></hr>
+            <h6>Welcome, Web Traveler</h6>
+            <blockquote>
+                <p><sup>Feel free to know me.</sup></p>
+            </blockquote>
+            <address><sub>
+                <p style="text-align: center;">Kristine Joy B. Igang <br>Sitio Cambuyao, San Vicente, Maribojoc, Bohol 6336 </p>
+            </sub></address>    
+
+        <cite> 
+            <ol>References:</ol>
+            <li>Tanenbaum, A. S., & Van Steen, M. (2006). Distributed Systems: Principles and Paradigms. Prentice Hall.</li>
+            <li><s>Tanenbaum, A. S., & Van Steen, M. (2006). Distributed Syst</s></li>
+            <li>Harris, D., & Harris, S. (2007). Digital Design and Computer Architecture. Morgan Kaufmann.</li>
+            <li>Kurose, J. F., & Ross, K. W. (2017). Computer Networking: A Top-Down Approach. Pearson.</li>
+           <li><del>, E. A., & Seshia, S. A. (2011). Introduction to Embedded Systems: A </del></li> 
+            <li>Lee, E. A., & Seshia, S. A. (2011). Introduction to Embedded Systems: A Cyber-Physical Systems Approach. MIT Press.</li>
+            <li>Bishop, C. M. (2006). Pattern Recognition and Machine Learning. Springer.</li>      
+            <li>Siewiorek, D. P. (2004). Reliable Computer Systems: Design and Evaluation. CRC Press.</li>
+            <li>Nielsen, M. A., & Chuang, I. L. (2010). Quantum Computation and Quantum Information. Cambridge University Press.</li>
+        </cite>
+        </article>
+</aside>
+<main>
+    
+            <article>
+                <h2><b><q>Exploring the World of Computer Engineering: Unraveling the Wonders of the Digital Realm</q></b></h2>
+                    
+                    <div id="slider-container">
+        <div id="slider">
+            <div class="slide"><img src="images/pic3.jpeg" alt="Slide 1"></div>
+            <div class="slide"><img src="images/pic1.jpeg" alt="Slide 2"></div>
+            <div class="slide"><img src="images/pic2.jpeg" alt="Slide 3"></div>
+            <!-- Add more slides as needed -->
+        </div>
+
+        <div id="dots-container"></div>
+    </div>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const dotsContainer = document.getElementById('dots-container');
+        let slideIndex = 0;
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % slider.children.length;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + slider.children.length) % slider.children.length;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            slider.style.transform = `translateX(${-slideIndex * 100}%)`;
+            updateDots();
+        }
+
+        function updateDots() {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active-dot', index === slideIndex);
+            });
+        }
+
+        // Create dots based on the number of slides
+        for (let i = 0; i < slider.children.length; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            dot.addEventListener('click', () => {
+                slideIndex = i;
+                updateSlider();
+            });
+            dotsContainer.appendChild(dot);
+        }
+
+        // Auto slide every 3 seconds (adjust as needed)
+        setInterval(nextSlide, 3000);
+    </script>    
+   
+                <h4>What is computer engineering?</h4>
+                <p style="text-align: justify; text-indent: 20px;"><dfn>Computer engineering</dfn> is a dynamic and rapidly evolving field that lies at the intersection of electrical engineering and computer science. It encompasses the design, development, and maintenance of computer systems and networks, ranging from microprocessors to supercomputers. As we navigate the 21st century, computer engineering plays a pivotal role in shaping our digital landscape and influencing various aspects of our daily lives.</p>
+                <h5>Foundations of Computer Engineering:</h5>
+                <p style="text-align: justify; text-indent: 20px;">At its essence, computer engineering builds upon the principles of electrical engineering and computer science. It encompasses both hardware and software, requiring a holistic understanding of the intricate relationship between the two domains (Tanenbaum & Van Steen, 2006). This interdisciplinary approach is essential for designing efficient computing systems.</p>
+                
+                <h5>Key Areas of Focus:</h5>
+                <ol>
+                    <li><ins>Microprocessor Design:</ins>
+                        The evolution of microprocessor design is a cornerstone of computer engineering. It involves optimizing chips for speed, efficiency, and power consumption (Harris & Harris, 2007). Advances in this field have significantly contributed to the continuous enhancement of computational power over the years.</li>
+                    <li><ins>Computer Networks:</ins>
+                            The development and maintenance of robust computer networks are critical aspects of computer engineering (Kurose & Ross, 2017). Engineers are tasked with designing protocols, routers, and switches, ensuring secure and reliable data transmission, especially in the era of lot.</li>
+                    <li><ins>Embedded Systems:</ins>
+                        Embedded systems are omnipresent in modern devices, and their design is a focal point for computer engineers (Lee & Seshia, 2011). These specialized computing systems demand expertise in both hardware and software to meet the constraints of various applications.</li>
+                    <li><ins>Artificial Intelligence and Machine Learning:</ins>
+                        The integration of AI and ML into diverse applications is transforming the field. Computer engineers contribute to the development of hardware and algorithms for these systems, fostering advancements in fields like natural language processing and image recognition (Bishop, 2006).</li>
+                </ol>
+                <h4><em>Challenges and Future Trends:</em></h4>
+                <p style="text-align: justify; text-indent: 20px;">Computer engineering faces challenges like the increasing demand for computational power, the quest for energy-efficient solutions, and the complexity of interconnected systems. Ongoing research is crucial to addressing these challenges and driving innovation in the field (Siewiorek, 2004).</p>
+                <p style="text-align: justify; text-indent: 20px;">Future trends include quantum computing, neuromorphic computing, and deeper integration of AI into everyday devices (Nielsen & Chuang, 2010). These emerging technologies open new frontiers, requiring the expertise of computer engineers to navigate uncharted territory.</p>
+                <p style="text-align: justify; text-indent: 20px;">In the dynamic landscape of computer engineering, professionals grapple with complexity, innovation, and challenges. Referencing foundational texts and cutting-edge research, this article has explored the multifaceted nature of the field. Computer engineers, armed with a deep understanding of both hardware and software, continue to shape the digital landscape, ensuring a future where technology seamlessly integrates into every facet of our lives. As the digital revolution unfolds, the role of computer engineering becomes increasingly pivotal in steering the trajectory of technological progress.</p>
+               
+                
+</main>
+<footer>
+    <figure>
+        <figcaption>
+            <code style="text-align: center;">
+                Welcome to my Website!
+                 I'm glad you're here.
+            </code>
+        </figcaption>
+    </figure>
+</footer>

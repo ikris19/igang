@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me, Myself, and I</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          overflow: hidden;
+        }
+    
+        .slideshow-container {
+          max-width: 100%;
+          position: relative;
+          margin: auto;
+          padding-top: 50px;
+        }
+    
+        .mySlides {
+          display: none;
+        }
+    
+       img {
+      width: 50%;
+      height: 50%;
+      height: auto;
+      display: block;
+      margin: 0 auto; /* This will center the image horizontally */
+    }
+    
+        .prev, .next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 24px;
+          cursor: pointer;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 15px;
+          border: none;
+          border-radius: 5px;
+        }
+    
+        .prev {
+          left: 10px;
+        }
+    
+        .next {
+          right: 10px;
+        }
+    
+        .caption {
+          position: absolute;
+          bottom: 0;
+          width: 98%;
+          text-align: center;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: white;
+          padding: 10px;
+          
+        }
+      </style>
+    </head>
+    <body>
+    
+        <header>
+            <img src="images/logo.jpg" alt="Profile Image" class="profile-image">
+            <h1>Self Introduction</h1>
+        </header>
+        <nav> 
+            <a href="index.html">Home</a> 
+            <a href="personal info.html">Personal Information</a> 
+            <a href="personal data.html">Personal Data</a> 
+            <a href="interest.html">Interest</a> 
+            <a href="track.html">Track</a>
+            <a href="visual.html">Visual Diary</a>
+          
+         </nav> 
+        </section>
+        <section id="images">
+            <h2>Images</h2>
+      
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="images/11.jpg" alt="Image 1">
+        <div class="caption">Age: 11</div>
+      </div>
+    
+      <div class="mySlides">
+        <img src="images/12.jpg" alt="Image 2">
+        <div class="caption">Age: 12</div>
+      </div>
+      
+        <div class="mySlides">
+        <img src="images/17.jpg" alt="Image 3">
+        <div class="caption">Age: 18</div>
+      </div>
+    
+        <div class="mySlides">
+        <img src="images/18.jpg" alt="Image 4">
+        <div class="caption">Age: 18</div>
+      </div>
+    
+      <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+      <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+    
+    <script>
+      let slideIndex = 1;
+    
+      showSlides(slideIndex);
+    
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+    
+      function showSlides(n) {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+    
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+    
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+    
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+    
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+    </section>
+    </body>
+    </html>
+</head>
+<body>
+
+   
+
+   
+
+
+
+    
